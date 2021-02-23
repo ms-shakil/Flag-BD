@@ -1,0 +1,26 @@
+body,html {
+    margin: 0;
+  }
+  
+  :root {
+    --red: #F42A41;
+    --green: #006A4E;
+    --size: 700px;
+  }
+  
+  .flag {
+    width: var(--size);
+    height: calc(var(--size) * 0.6);
+    background-color: var(--green);
+    position: relative;
+  }
+  
+  .flag .circle {
+    position: absolute;
+    width: calc(var(--size) * 0.4);
+    height: calc(var(--size) * 0.4);
+    border-radius: 50%;
+    background-color: var(--red);
+    top: calc(var(--size) * 0.1);
+    left: calc(var(--size) * 0.25);
+  }
